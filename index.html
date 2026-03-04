@@ -20,6 +20,8 @@ body {
     overflow-x: hidden;
 }
 
+/* NAV */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -28,7 +30,7 @@ nav {
     position: fixed;
     width: 100%;
     background: rgba(15,15,26,0.6);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     z-index: 1000;
 }
 
@@ -54,6 +56,8 @@ nav ul li {
 nav ul li:hover {
     color: #9d00ff;
 }
+
+/* HERO */
 
 .hero {
     height: 100vh;
@@ -97,8 +101,10 @@ nav ul li:hover {
     box-shadow: 0 0 25px #9d00ff;
 }
 
+/* SECTION */
+
 .section {
-    padding: 100px 10%;
+    padding: 120px 10%;
     text-align: center;
 }
 
@@ -107,7 +113,16 @@ nav ul li:hover {
     margin-bottom: 40px;
 }
 
+.section p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.8;
+}
+
+/* GAME CARDS */
+
 .cards {
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
@@ -123,13 +138,44 @@ nav ul li:hover {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px #00f7ff;
+    box-shadow: 0 0 25px #00f7ff;
 }
+
+/* CTA */
+
+.cta {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 40px;
+}
+
+.cta button {
+    margin-top: 30px;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00f7ff, #9d00ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #9d00ff;
+}
+
+/* FOOTER */
 
 footer {
     padding: 40px;
     text-align: center;
     background: rgba(0,0,0,0.4);
+    opacity: 0.7;
 }
 
 </style>
@@ -141,15 +187,20 @@ footer {
     <ul>
         <li>Home</li>
         <li>Games</li>
-        <li>Services</li>
+        <li>About</li>
         <li>Contact</li>
     </ul>
 </nav>
 
 <section class="hero">
     <h2>Crafting Digital Worlds</h2>
-    <p>MoreByteStudios creates immersive, next-generation gaming experiences powered by creativity and innovation.</p>
+    <p>MoreByteStudios builds immersive, next-generation gaming experiences powered by creativity and innovation.</p>
     <button>Explore Our Games</button>
+</section>
+
+<section class="section">
+    <h3>About Us</h3>
+    <p>We are a passionate game development studio focused on creating visually stunning and deeply engaging interactive experiences. At MoreByteStudios, every byte matters.</p>
 </section>
 
 <section class="section">
@@ -170,22 +221,9 @@ footer {
     </div>
 </section>
 
-<section class="section">
-    <h3>What We Do</h3>
-    <div class="cards">
-        <div class="card">
-            <h4>Game Development</h4>
-            <p>Full-cycle game production from concept to launch.</p>
-        </div>
-        <div class="card">
-            <h4>3D Design</h4>
-            <p>High-quality assets and immersive environments.</p>
-        </div>
-        <div class="card">
-            <h4>Publishing</h4>
-            <p>Helping games reach global audiences.</p>
-        </div>
-    </div>
+<section class="cta">
+    <h3>Ready to Play?</h3>
+    <button>Join the Community</button>
 </section>
 
 <footer>
