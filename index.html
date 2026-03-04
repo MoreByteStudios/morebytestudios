@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoreByteStudios</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f1a, #0c0c14);
+    color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    background: rgba(15,15,26,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav h1 {
+    font-weight: 700;
+    font-size: 24px;
+    background: linear-gradient(45deg, #00f7ff, #9d00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #9d00ff;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+    flex-direction: column;
+}
+
+.hero h2 {
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(45deg, #00f7ff, #9d00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 600px;
+    opacity: 0.8;
+}
+
+.hero button {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00f7ff, #9d00ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #9d00ff;
+}
+
+.section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>MoreByteStudios</h1>
+    <ul>
+        <li>Home</li>
+        <li>Games</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Crafting Digital Worlds</h2>
+    <p>MoreByteStudios creates immersive, next-generation gaming experiences powered by creativity and innovation.</p>
+    <button>Explore Our Games</button>
+</section>
+
+<section class="section">
+    <h3>Our Games</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Project Nova</h4>
+            <p>A futuristic multiplayer adventure.</p>
+        </div>
+        <div class="card">
+            <h4>Shadow Drift</h4>
+            <p>High-speed cyber racing action.</p>
+        </div>
+        <div class="card">
+            <h4>Pixel Kingdom</h4>
+            <p>Retro strategy meets modern design.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h3>What We Do</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Game Development</h4>
+            <p>Full-cycle game production from concept to launch.</p>
+        </div>
+        <div class="card">
+            <h4>3D Design</h4>
+            <p>High-quality assets and immersive environments.</p>
+        </div>
+        <div class="card">
+            <h4>Publishing</h4>
+            <p>Helping games reach global audiences.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 MoreByteStudios. All rights reserved.
+</footer>
+
+</body>
+</html>
