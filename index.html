@@ -19,6 +19,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
 body {
     background: linear-gradient(135deg, #0f0f1a, #0c0c14);
     color: white;
@@ -174,7 +185,10 @@ footer {
 <body>
 
 <nav>
-    <h1>MoreByteStudios</h1>
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+        <h1>MoreByteStudios</h1>
+    </div>
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
