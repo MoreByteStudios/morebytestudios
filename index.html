@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MoreByteStudios</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
 <style>
 
 * {
@@ -14,13 +15,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(135deg, #0f0f1a, #0c0c14);
     color: white;
     overflow-x: hidden;
 }
 
-/* NAV */
+/* NAVIGATION */
 
 nav {
     display: flex;
@@ -48,12 +53,13 @@ nav ul {
     gap: 30px;
 }
 
-nav ul li {
-    cursor: pointer;
+nav a {
+    text-decoration: none;
+    color: white;
     transition: 0.3s;
 }
 
-nav ul li:hover {
+nav a:hover {
     color: #9d00ff;
 }
 
@@ -84,24 +90,26 @@ nav ul li:hover {
     opacity: 0.8;
 }
 
-.hero button {
+/* BUTTON STYLE */
+
+.btn {
+    display: inline-block;
     margin-top: 40px;
-    padding: 15px 40px;
-    border: none;
+    padding: 15px 45px;
     border-radius: 30px;
     background: linear-gradient(45deg, #00f7ff, #9d00ff);
     color: white;
+    text-decoration: none;
     font-size: 16px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
-.hero button:hover {
+.btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px #9d00ff;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section {
     padding: 120px 10%;
@@ -152,23 +160,6 @@ nav ul li:hover {
     font-size: 40px;
 }
 
-.cta button {
-    margin-top: 30px;
-    padding: 15px 45px;
-    border: none;
-    border-radius: 30px;
-    background: linear-gradient(45deg, #00f7ff, #9d00ff);
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.cta button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #9d00ff;
-}
-
 /* FOOTER */
 
 footer {
@@ -185,45 +176,39 @@ footer {
 <nav>
     <h1>MoreByteStudios</h1>
     <ul>
-        <li>Home</li>
-        <li>Games</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
     <h2>Crafting Digital Worlds</h2>
     <p>MoreByteStudios builds immersive, next-generation gaming experiences powered by creativity and innovation.</p>
-    <button>Explore Our Games</button>
+    <a href="#games" class="btn">Explore Our Games</a>
 </section>
 
-<section class="section">
+<section class="section" id="about">
     <h3>About Us</h3>
     <p>We are a passionate game development studio focused on creating visually stunning and deeply engaging interactive experiences. At MoreByteStudios, every byte matters.</p>
 </section>
 
-<section class="section">
+<section class="section" id="games">
     <h3>Our Games</h3>
     <div class="cards">
         <div class="card">
-            <h4>Project Nova</h4>
-            <p>A futuristic multiplayer adventure.</p>
-        </div>
-        <div class="card">
-            <h4>Shadow Drift</h4>
-            <p>High-speed cyber racing action.</p>
-        </div>
-        <div class="card">
-            <h4>Pixel Kingdom</h4>
-            <p>Retro strategy meets modern design.</p>
+            <h4>Splatformer</h4>
+            <p>A pixel style platformer where the level is invisible!</p>
         </div>
     </div>
 </section>
 
-<section class="cta">
+<section class="cta" id="contact">
     <h3>Ready to Play?</h3>
-    <button>Join the Community</button>
+    <a href="https://discord.gg/YOUR-LINK-HERE" target="_blank" class="btn">
+        Join the Discord
+    </a>
 </section>
 
 <footer>
